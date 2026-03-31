@@ -16,6 +16,9 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
+      # 소스 코드 가져오기 이후, 빌드 단계 이전에 추가
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
       - name: Build with Gradle
         run: ./gradlew build -x test
 
