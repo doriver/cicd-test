@@ -13,4 +13,10 @@ public class FirstController {
     public String aa() {
         return "First WAS";
     }
+
+    @RequestMapping("/cc")
+    @ResponseBody
+    public String caa() {
+        return "First cicd";
+    }
 }
