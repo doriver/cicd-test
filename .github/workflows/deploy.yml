@@ -41,7 +41,6 @@ jobs:
         # Docker ready 대기
             timeout 30s bash -c '
               until sudo docker info >/dev/null 2>&1; do
-                echo "Waiting for Docker to start..."
                 sleep 1
               done
             ' || { echo "Docker not ready"; exit 1; }
