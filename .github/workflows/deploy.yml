@@ -38,7 +38,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             sudo systemctl start docker
-        # Docker ready 대기
+            
             timeout 30s bash -c '
               until sudo docker info >/dev/null 2>&1; do
                 sleep 1
