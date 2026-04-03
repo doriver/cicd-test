@@ -39,7 +39,7 @@ jobs:
           script: |
             sudo systemctl start docker
             
-            timeout 30s bash -c '
+            timeout 60s bash -c '
               until sudo docker info >/dev/null 2>&1; do
                 sleep 1
               done
