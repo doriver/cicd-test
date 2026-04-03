@@ -16,7 +16,7 @@ public class FirstController {
 
     @RequestMapping("/cc")
     @ResponseBody
-    public String caa() {
+    public String caaa() {
         return "First ci/cd12";
     }
 }
