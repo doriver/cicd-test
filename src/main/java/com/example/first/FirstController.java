@@ -19,4 +19,10 @@ public class FirstController {
     public String caaa() {
         return "First ci/cd12";
     }
+
+    @RequestMapping("/aa")
+    @ResponseBody
+    public String aaa() {
+        return "ㅅㅅ";
+    }
 }
